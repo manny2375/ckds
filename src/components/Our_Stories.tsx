@@ -28,7 +28,7 @@ export default function Recognition({ onVisible }: RecognitionProps) {
     <section
       id="our_stories"
       ref={sectionRef}
-      className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 bg-[#E8D5C4]"
+      className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 bg-[#E8D5C4]"
       aria-labelledby="recognition-heading"
     >
       <div className="h-full flex flex-col">

@@ -29,7 +29,7 @@ export default function Story({ onVisible }: StoryProps) {
       <section
         id="about_us"
         ref={sectionRef}
-        className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center justify-center bg-white"
+        className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center justify-center bg-white"
         aria-labelledby="story-heading"
       >
         <div className="w-full h-full flex flex-col lg:flex-row">
@@ -54,7 +54,7 @@ export default function Story({ onVisible }: StoryProps) {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 h-[50vh] lg:h-full border-l border-gray-200 px-8 sm:px-12 lg:px-16 xl:px-24 py-12 lg:py-24 flex items-end lg:pb-32">
+          <div className="w-full lg:w-1/2 min-h-[50vh] lg:h-full border-l border-gray-200 px-8 sm:px-12 lg:px-16 xl:px-24 py-12 lg:py-24 flex items-end lg:pb-32">
             <div className="max-w-xl">
               <p className="text-[15px] text-gray-800 leading-relaxed mb-6">
                 CKDS is a boutique interior design studio shaping hospitality, restaurants, retail, clubhouses, commercial environments, and luxury residences. Every space we craft is designed to leave a lasting imprint on those who experience it. We merge strategy, aesthetics, and foresight to anticipate how lifestyle will evolve — designing not just for today, but for how people and communities will thrive tomorrow. Every detail is purposeful, turning design into a story that elevates the human experience.
@@ -65,7 +65,7 @@ export default function Story({ onVisible }: StoryProps) {
       </section>
 
       <section
-        className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-start lg:items-center bg-white"
+        className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-start xl:items-center bg-white"
         aria-labelledby="design-ethos-heading"
       >
         <div className="w-full px-8 sm:px-12 lg:px-16 xl:px-24 py-8 sm:py-12 lg:py-0 flex">
@@ -128,7 +128,7 @@ export default function Story({ onVisible }: StoryProps) {
       </section>
 
       <section
-        className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center justify-center bg-white"
+        className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center justify-center bg-white"
         aria-labelledby="approach-heading"
       >
         <div className="w-full h-full flex items-end">

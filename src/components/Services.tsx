@@ -28,7 +28,7 @@ export default function Talent({ onVisible }: TalentProps) {
     <section
       id="our_services"
       ref={sectionRef}
-      className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-start"
+      className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-start"
       aria-labelledby="services-heading"
     >
       <div className="w-full h-full grid lg:grid-cols-2">

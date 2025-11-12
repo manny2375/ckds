@@ -59,7 +59,7 @@ export default function Contact({ onVisible }: ContactProps) {
     <section
       id="collaborate"
       ref={sectionRef}
-      className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center lg:overflow-y-auto bg-white"
+      className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center xl:overflow-y-auto bg-white"
       aria-labelledby="contact-heading"
     >
       <div className="w-full px-6 sm:px-12 lg:px-16 xl:px-24 py-12">

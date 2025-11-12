@@ -12,6 +12,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --t-body: clamp(14px, 0.95vw + 10px, 16px);
+  --t-h2: clamp(22px, 1.8vw + 14px, 30px);
+  --t-h1: clamp(28px, 2.7vw + 16px, 40px);
+  --space: clamp(16px, 1.6vw, 28px);
+}
+
 html, body {
   height: 100%;
 }
@@ -21,6 +28,7 @@ body {
   position: static;
   width: 100%;
   min-height: 100svh;
+  font-size: var(--t-body);
 }
 
 @supports (-webkit-touch-callout: none) {
@@ -29,6 +37,18 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-size: var(--t-h1);
+  line-height: 1.1;
+  font-family: 'Playfair Display', serif;
+}
+
+h2 {
+  font-size: var(--t-h2);
+  line-height: 1.15;
+  font-family: 'Playfair Display', serif;
+}
+
+h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
 }

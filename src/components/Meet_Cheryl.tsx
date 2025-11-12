@@ -28,7 +28,7 @@ export default function Experiences({ onVisible }: ExperiencesProps) {
     <section
       id="meet_cheryl_kaye"
       ref={sectionRef}
-      className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center lg:overflow-y-auto bg-[#f8f8f8]"
+      className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center xl:overflow-y-auto bg-[#f8f8f8]"
       aria-labelledby="cheryl-heading"
     >
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-8">

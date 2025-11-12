@@ -7,6 +7,7 @@ import Vision from './components/Vision';
 import Services from './components/Services';
 import OurStories from './components/Our_Stories';
 import Collaborate from './components/Collaborate';
+import useIsDesktopLike from './hooks/useIsDesktopLike';
 
 const sections = ['hero', 'about-1', 'about-2', 'about-3', 'meet-cheryl', 'vision', 'services', 'stories', 'contact'];
 const navToPageMap: { [key: string]: number } = {
@@ -20,33 +21,12 @@ const navToPageMap: { [key: string]: number } = {
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const [currentPage, setCurrentPage] = useState(0);
-  const [isDesktop, setIsDesktop] = useState(
-    typeof window !== 'undefined' ? window.matchMedia('(min-width: 1024px)').matches : false
-  );
+  const isDesktopLike = useIsDesktopLike();
   const containerRef = useRef<HTMLDivElement>(null);
   const isScrolling = useRef(false);
 
   useEffect(() => {
-    const mql = window.matchMedia('(min-width: 1024px)');
-    const onChange = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
-
-    if ('addEventListener' in mql) {
-      mql.addEventListener('change', onChange);
-    } else {
-      mql.addListener(onChange);
-    }
-
-    return () => {
-      if ('removeEventListener' in mql) {
-        mql.removeEventListener('change', onChange);
-      } else {
-        mql.removeListener(onChange);
-      }
-    };
-  }, []);
-
-  useEffect(() => {
-    if (!isDesktop) return;
+    if (!isDesktopLike) return;
 
     let accumulatedDelta = 0;
     const SCROLL_THRESHOLD = 100;
@@ -91,12 +71,12 @@ function App() {
         container.removeEventListener('wheel', handleWheel);
       }
     };
-  }, [isDesktop, currentPage]);
+  }, [isDesktopLike, currentPage]);
 
   return (
     <div
       ref={containerRef}
-      className={isDesktop ? "h-screen w-screen bg-white overflow-hidden" : "min-h-screen w-full bg-white overflow-y-auto snap-y snap-mandatory"}
+      className={isDesktopLike ? "h-screen w-screen bg-white overflow-hidden" : "min-h-screen w-full bg-white overflow-y-auto snap-y snap-mandatory"}
     >
       <Navigation activeSection={activeSection} onNavigate={(sectionId) => {
         const pageIndex = sectionId === 'hero' ? 0 : (navToPageMap[sectionId] || 0);
@@ -104,8 +84,8 @@ function App() {
         setActiveSection(sectionId);
       }} />
       <div
-        className={isDesktop ? "h-full w-full flex transition-transform duration-1000 ease-in-out" : "h-full w-full"}
-        style={{ transform: isDesktop ? `translateX(-${currentPage * 100}vw)` : 'none' }}
+        className={isDesktopLike ? "h-full w-full flex transition-transform duration-1000 ease-in-out" : "h-full w-full"}
+        style={{ transform: isDesktopLike ? `translateX(-${currentPage * 100}vw)` : 'none' }}
       >
         <Hero />
         <AboutUs onVisible={() => setActiveSection('about')} />

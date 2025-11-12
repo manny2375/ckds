@@ -28,7 +28,7 @@ export default function Vision({ onVisible }: VisionProps) {
     <section
       id="vision"
       ref={sectionRef}
-      className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center justify-center relative"
+      className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center justify-center relative"
       aria-label="Our vision"
     >
       <div className="absolute inset-0 overflow-hidden">

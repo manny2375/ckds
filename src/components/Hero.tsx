@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="snap-start lg:snap-none relative min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center justify-center"
+      className="snap-start xl:snap-none relative min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center justify-center"
       aria-label="Hero section"
     >
       <div className="absolute inset-0 overflow-hidden">
