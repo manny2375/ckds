@@ -1,0 +1,82 @@
+import { useEffect, useRef } from 'react';
+
+interface ExperiencesProps {
+  onVisible: () => void;
+}
+
+export default function Experiences({ onVisible }: ExperiencesProps) {
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          onVisible();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [onVisible]);
+
+  return (
+    <section
+      id="meet_cheryl_kaye"
+      ref={sectionRef}
+      className="min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center lg:overflow-y-auto bg-[#f8f8f8]"
+      aria-labelledby="cheryl-heading"
+    >
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-8">
+        <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-4 sm:mb-6" aria-hidden="true">
+          CHAPTER 2 — MEET CHERYL KAYE
+        </div>
+
+        <h2 id="cheryl-heading" className="text-4xl font-light leading-tight mb-4" style={{ fontFamily: 'Georgia, serif' }}>
+          Meet Cheryl Kaye
+        </h2>
+        <div className="w-24 h-px bg-gradient-to-r from-black to-transparent mb-8 lg:mb-10"></div>
+
+        <div className="grid lg:grid-cols-[340px,1fr] gap-6 lg:gap-12 items-start">
+          <div className="w-full max-w-sm mx-auto lg:mx-0 lg:h-[480px] overflow-hidden">
+            <img
+              src="/cherylblack.png"
+              alt="Cheryl Kaye, Interior Designer and Founder of CKDS"
+              className="w-full h-full object-cover object-top"
+            />
+          </div>
+
+          <div className="space-y-5 text-[14px] leading-[1.7] text-black">
+            <p>
+              Design shapes life, influencing how we move, feel, and connect within the spaces around us. For over two decades, I have explored this power, discovering how thoughtful design can inspire, nurture, and transform. My education at the Interior Design Institute of Newport Beach and experience with Hatch Design Group laid the foundation for a career that spans restaurants, hospitality, residential spaces, and the design and manufacturing of custom lighting, giving me a perspective that seamlessly blends creativity with technical insight.
+            </p>
+
+            <p>
+              Extraordinary is never ordinary. I look beyond the obvious to uncover the essence of each space, translating experience, culture, and human behavior into environments that feel purposeful, considered, and unmistakably distinctive.
+            </p>
+
+            <p>
+              I am passionate about human sustainability, creating spaces that nurture well-being and connection. My journey continues to evolve; each project teaches me something new and shapes my vision while allowing me to grow alongside the communities and people I design for.
+            </p>
+
+            <p>
+              As an entrepreneur, I approach design with both creativity and strategy, understanding the business, the return on investment, and the deeper intentions of every client. As a curator of experiences, I sense the subtle shifts in culture and expectation, and as a visionary, I anticipate the ways trends, behaviors, and lifestyles will unfold. Each project becomes a living story, a space shaped with intention, infused with personality, and brimming with possibility.
+            </p>
+
+            <div className="pt-4 flex items-center justify-end">
+              <img
+                src="/cksig.jpg"
+                alt="Cheryl Kay Signature"
+                className="h-14 sm:h-16 lg:h-20 w-auto object-contain mix-blend-multiply"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
