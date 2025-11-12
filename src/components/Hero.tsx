@@ -25,15 +25,15 @@ export default function Hero() {
         />
       </div>
 
-      <div className="relative z-10 text-white px-6 max-w-7xl mx-auto w-full h-full flex flex-col">
-        <div className="pt-16 md:pt-20 lg:pt-24 flex justify-center">
+      <div className="relative z-10 text-white px-4 sm:px-6 max-w-7xl mx-auto w-full h-full flex flex-col">
+        <div className="pt-20 sm:pt-16 md:pt-20 lg:pt-24 flex justify-center">
           <img
             src="/CopyCKDS_FULL.png"
             alt="Cheryl Kaye Design Studio"
             className="h-[5.6rem] md:h-[7.2rem] lg:h-[8.8rem] w-auto brightness-0 invert"
           />
         </div>
-        <div className="text-left max-w-4xl flex-1 flex flex-col justify-center -mt-20">
+        <div className="text-left max-w-4xl flex-1 flex flex-col justify-center -mt-16 sm:-mt-20">
           <h2 className="text-4xl font-light tracking-wide">
             Storytelling Through Design
           </h2>
