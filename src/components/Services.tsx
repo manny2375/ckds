@@ -56,21 +56,47 @@ export default function Talent({ onVisible }: TalentProps) {
 
           <div className="mb-10">
             <h3 className="text-base sm:text-lg font-semibold mb-6">Our services include:</h3>
-            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3">
-              <ul className="space-y-2 text-[15px] text-gray-900">
-                <li>• Interior Architecture & Design</li>
-                <li>• Concept Development & Strategy</li>
-                <li>• Design Development</li>
-                <li>• Furniture, Fixtures & Equipment (FF&E) Curation & Procurement</li>
-                <li>• Art & Accessories Curation & Procurement</li>
-              </ul>
-              <ul className="space-y-2 text-[15px] text-gray-900">
-                <li>• Custom Lighting Design</li>
-                <li>• Construction Documentation & Coordination</li>
-                <li>• WELL Design & Consultation</li>
-                <li>• 3D Modeling & Visualization</li>
-                <li>• New Construction, Design-Build, Renovation & Repositioning</li>
-              </ul>
+            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 text-[15px] text-gray-900">
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Interior Architecture & Design</span>
+              </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Custom Lighting Design</span>
+              </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Concept Development & Strategy</span>
+              </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Construction Documentation & Coordination</span>
+              </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Design Development</span>
+              </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>WELL Design & Consultation</span>
+              </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Furniture, Fixtures & Equipment (FF&E) Curation & Procurement</span>
+              </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>3D Modeling & Visualization</span>
+              </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Art & Accessories Curation & Procurement</span>
+              </div>
+              <div className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>New Construction, Design-Build, Renovation & Repositioning</span>
+              </div>
             </div>
           </div>
 
