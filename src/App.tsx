@@ -8,20 +8,20 @@ import Services from './components/Services';
 import OurStories from './components/Our_Stories';
 import Collaborate from './components/Collaborate';
 
+const sections = ['hero', 'about-1', 'about-2', 'about-3', 'meet-cheryl', 'vision', 'services', 'stories', 'contact'];
+const navToPageMap: { [key: string]: number } = {
+  'about': 1,
+  'meet-cheryl': 4,
+  'services': 6,
+  'stories': 7,
+  'contact': 8
+};
+
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const [currentPage, setCurrentPage] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const isScrolling = useRef(false);
-
-  const sections = ['hero', 'about-1', 'about-2', 'about-3', 'meet-cheryl', 'vision', 'services', 'stories', 'contact'];
-  const navToPageMap: { [key: string]: number } = {
-    'about': 1,
-    'meet-cheryl': 4,
-    'services': 6,
-    'stories': 7,
-    'contact': 8
-  };
 
   useEffect(() => {
     const isMobile = window.innerWidth < 1024;
@@ -45,7 +45,9 @@ function App() {
         if (nextPage >= 0 && nextPage < sections.length) {
           isScrolling.current = true;
           setCurrentPage(nextPage);
-          setActiveSection(sections[nextPage]);
+          const sectionId = sections[nextPage];
+          const navSection = sectionId.startsWith('about-') ? 'about' : sectionId;
+          setActiveSection(navSection);
 
           accumulatedDelta = 0;
 
@@ -68,7 +70,7 @@ function App() {
         container.removeEventListener('wheel', handleWheel);
       }
     };
-  }, [currentPage, sections]);
+  }, [currentPage]);
 
   return (
     <div
