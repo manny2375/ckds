@@ -110,7 +110,7 @@ export default function Contact({ onVisible }: ContactProps) {
             >
               Linkedin
             </a>
-            <span>,</span>
+            <span>|</span>
             <a
               href="https://www.instagram.com/cherylkaye/"
               target="_blank"
