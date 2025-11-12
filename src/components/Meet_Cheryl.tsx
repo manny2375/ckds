@@ -28,7 +28,7 @@ export default function Experiences({ onVisible }: ExperiencesProps) {
     <section
       id="meet_cheryl_kaye"
       ref={sectionRef}
-      className="min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center lg:overflow-y-auto bg-[#f8f8f8]"
+      className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center lg:overflow-y-auto bg-[#f8f8f8]"
       aria-labelledby="cheryl-heading"
     >
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-8">
@@ -42,7 +42,7 @@ export default function Experiences({ onVisible }: ExperiencesProps) {
         <div className="w-24 h-px bg-gradient-to-r from-black to-transparent mb-8 lg:mb-10"></div>
 
         <div className="grid lg:grid-cols-[340px,1fr] gap-6 lg:gap-12 items-start">
-          <div className="w-full max-w-sm mx-auto lg:mx-0 lg:h-[480px] overflow-hidden">
+          <div className="w-full max-w-sm mx-auto lg:mx-0 h-[360px] sm:h-[420px] lg:h-[480px] overflow-hidden">
             <img
               src="/cherylblack.png"
               alt="Cheryl Kaye, Interior Designer and Founder of CKDS"

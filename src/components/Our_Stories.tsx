@@ -28,7 +28,7 @@ export default function Recognition({ onVisible }: RecognitionProps) {
     <section
       id="our_stories"
       ref={sectionRef}
-      className="min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 bg-[#E8D5C4]"
+      className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 bg-[#E8D5C4]"
       aria-labelledby="recognition-heading"
     >
       <div className="h-full flex flex-col">
@@ -41,33 +41,39 @@ export default function Recognition({ onVisible }: RecognitionProps) {
         </div>
 
         <div className="flex-1 grid grid-cols-1 lg:grid-cols-3 gap-0">
-          <div className="relative overflow-hidden flex items-center justify-center">
-            <img
-              src="/polina-hospitality-unsplash.jpg"
-              alt="Hospitality interior design"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/40" />
+          <div className="relative flex items-center justify-center min-h-[300px]">
+            <div className="absolute inset-0 overflow-hidden">
+              <img
+                src="/polina-hospitality-unsplash.jpg"
+                alt="Hospitality interior design"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40" />
+            </div>
             <h3 className="relative z-10 text-4xl font-light text-white">Hospitality</h3>
           </div>
 
-          <div className="relative overflow-hidden flex items-center justify-center">
-            <img
-              src="/aranprime-commercial-unsplash.jpg"
-              alt="Commercial interior design"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/40" />
+          <div className="relative flex items-center justify-center min-h-[300px]">
+            <div className="absolute inset-0 overflow-hidden">
+              <img
+                src="/aranprime-commercial-unsplash.jpg"
+                alt="Commercial interior design"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40" />
+            </div>
             <h3 className="relative z-10 text-4xl font-light text-white">Commercial</h3>
           </div>
 
-          <div className="relative overflow-hidden flex items-center justify-center">
-            <img
-              src="/rhema-residential-unsplash.jpg"
-              alt="Residential interior design"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-black/40" />
+          <div className="relative flex items-center justify-center min-h-[300px]">
+            <div className="absolute inset-0 overflow-hidden">
+              <img
+                src="/rhema-residential-unsplash.jpg"
+                alt="Residential interior design"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-black/40" />
+            </div>
             <h3 className="relative z-10 text-4xl font-light text-white">Residential</h3>
           </div>
         </div>

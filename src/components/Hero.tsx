@@ -2,25 +2,28 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center justify-center overflow-hidden"
+      className="snap-start lg:snap-none relative min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center justify-center"
       aria-label="Hero section"
     >
-      <iframe
-        src="https://customer-mp06svfe1n138f7h.cloudflarestream.com/1f294a6d436628c5de70e1b33a04f0e3/iframe?autoplay=true&loop=true&muted=true&controls=false&poster=https%3A%2F%2Fcustomer-mp06svfe1n138f7h.cloudflarestream.com%2F1f294a6d436628c5de70e1b33a04f0e3%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
-        loading="eager"
-        className="absolute inset-0 w-full h-full object-cover"
-        allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-        allowFullScreen
-        style={{
-          border: 'none',
-          width: '100vw',
-          height: '100vh',
-          objectFit: 'cover',
-          transform: 'scale(1.5)',
-          transformOrigin: 'center'
-        }}
-        title="Hero background video"
-      />
+      <div className="absolute inset-0 overflow-hidden">
+        <iframe
+          src="https://customer-mp06svfe1n138f7h.cloudflarestream.com/1f294a6d436628c5de70e1b33a04f0e3/iframe?autoplay=true&loop=true&muted=true&controls=false&poster=https%3A%2F%2Fcustomer-mp06svfe1n138f7h.cloudflarestream.com%2F1f294a6d436628c5de70e1b33a04f0e3%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
+          loading="eager"
+          className="absolute inset-0 w-full h-full object-cover"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+          allowFullScreen
+          style={{
+            border: 'none',
+            width: '100vw',
+            height: '100vh',
+            objectFit: 'cover',
+            transform: 'scale(1.5)',
+            transformOrigin: 'center',
+            pointerEvents: 'none'
+          }}
+          title="Hero background video"
+        />
+      </div>
 
       <div className="relative z-10 text-white px-6 max-w-7xl mx-auto w-full h-full flex flex-col">
         <div className="pt-16 md:pt-20 lg:pt-24 flex justify-center">
