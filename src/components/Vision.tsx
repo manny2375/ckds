@@ -43,7 +43,8 @@ export default function Vision({ onVisible }: VisionProps) {
           height: '100vh',
           objectFit: 'cover',
           transform: 'scale(1.5)',
-          transformOrigin: 'center'
+          transformOrigin: 'center',
+          pointerEvents: 'none'
         }}
         title="Vision background video"
       />
