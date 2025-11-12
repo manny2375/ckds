@@ -29,10 +29,12 @@ function App() {
     if (!isDesktopLike) return;
 
     let accumulatedDelta = 0;
-    const SCROLL_THRESHOLD = 100;
+    const SCROLL_THRESHOLD = 160;
     let scrolling = false;
 
     const handleWheel = (e: WheelEvent) => {
+      if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
+
       e.preventDefault();
 
       if (scrolling) return;
@@ -77,6 +79,7 @@ function App() {
     <div
       ref={containerRef}
       className={isDesktopLike ? "h-screen w-screen bg-white overflow-hidden" : "min-h-screen w-full bg-white overflow-y-auto snap-y snap-mandatory"}
+      style={{ touchAction: isDesktopLike ? 'auto' : 'pan-y pinch-zoom' }}
     >
       <Navigation activeSection={activeSection} onNavigate={(sectionId) => {
         const pageIndex = sectionId === 'hero' ? 0 : (navToPageMap[sectionId] || 0);
@@ -84,8 +87,11 @@ function App() {
         setActiveSection(sectionId);
       }} />
       <div
-        className={isDesktopLike ? "h-full w-full flex transition-transform duration-1000 ease-in-out" : "h-full w-full"}
-        style={{ transform: isDesktopLike ? `translateX(-${currentPage * 100}vw)` : 'none' }}
+        className={isDesktopLike ? "h-full flex transition-transform duration-1000 ease-in-out" : "w-full"}
+        style={{
+          transform: isDesktopLike ? `translateX(-${currentPage * 100}vw)` : 'none',
+          width: isDesktopLike ? `${sections.length * 100}vw` : '100%'
+        }}
       >
         <Hero />
         <AboutUs onVisible={() => setActiveSection('about')} />
