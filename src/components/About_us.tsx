@@ -131,8 +131,8 @@ export default function Story({ onVisible }: StoryProps) {
         className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center justify-center bg-white"
         aria-labelledby="approach-heading"
       >
-        <div className="w-full h-full flex items-end">
-          <div className="w-full lg:w-1/2 h-full">
+        <div className="w-full h-full flex flex-col lg:flex-row lg:items-end">
+          <div className="w-full lg:w-1/2 h-[40vh] lg:h-full">
             <img
               src="/geraldine-D8KM6mUP5bI-unsplash.jpg"
               alt="Interior design detail showcasing craftsmanship"
@@ -140,7 +140,7 @@ export default function Story({ onVisible }: StoryProps) {
             />
           </div>
 
-          <div className="w-full lg:w-1/2 h-full flex flex-col justify-end px-8 sm:px-12 lg:px-16 xl:px-24 py-12 lg:pb-24">
+          <div className="w-full lg:w-1/2 flex-1 lg:h-full flex flex-col justify-center lg:justify-end px-8 sm:px-12 lg:px-16 xl:px-24 py-12 lg:pb-24">
             <div className="max-w-xl">
               <h3 id="approach-heading" className="text-4xl font-light mb-8 tracking-tight text-black" style={{ fontFamily: 'Georgia, serif' }}>
                 Our Approach
