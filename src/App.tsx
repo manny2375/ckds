@@ -20,21 +20,42 @@ const navToPageMap: { [key: string]: number } = {
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
   const [currentPage, setCurrentPage] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(
+    typeof window !== 'undefined' ? window.matchMedia('(min-width: 1024px)').matches : false
+  );
   const containerRef = useRef<HTMLDivElement>(null);
   const isScrolling = useRef(false);
 
   useEffect(() => {
-    const isMobile = window.innerWidth < 1024;
+    const mql = window.matchMedia('(min-width: 1024px)');
+    const onChange = (e: MediaQueryListEvent) => setIsDesktop(e.matches);
 
-    if (isMobile) return;
+    if ('addEventListener' in mql) {
+      mql.addEventListener('change', onChange);
+    } else {
+      mql.addListener(onChange);
+    }
+
+    return () => {
+      if ('removeEventListener' in mql) {
+        mql.removeEventListener('change', onChange);
+      } else {
+        mql.removeListener(onChange);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isDesktop) return;
 
     let accumulatedDelta = 0;
     const SCROLL_THRESHOLD = 100;
+    let scrolling = false;
 
     const handleWheel = (e: WheelEvent) => {
       e.preventDefault();
 
-      if (isScrolling.current) return;
+      if (scrolling) return;
 
       accumulatedDelta += e.deltaY;
 
@@ -43,7 +64,7 @@ function App() {
         const nextPage = currentPage + direction;
 
         if (nextPage >= 0 && nextPage < sections.length) {
-          isScrolling.current = true;
+          scrolling = true;
           setCurrentPage(nextPage);
           const sectionId = sections[nextPage];
           const navSection = sectionId.startsWith('about-') ? 'about' : sectionId;
@@ -52,7 +73,7 @@ function App() {
           accumulatedDelta = 0;
 
           setTimeout(() => {
-            isScrolling.current = false;
+            scrolling = false;
           }, 600);
         } else {
           accumulatedDelta = 0;
@@ -70,12 +91,12 @@ function App() {
         container.removeEventListener('wheel', handleWheel);
       }
     };
-  }, [currentPage]);
+  }, [isDesktop, currentPage]);
 
   return (
     <div
       ref={containerRef}
-      className="h-screen w-screen bg-white lg:overflow-hidden overflow-y-auto"
+      className={isDesktop ? "h-screen w-screen bg-white overflow-hidden" : "min-h-screen w-full bg-white overflow-y-auto snap-y snap-mandatory"}
     >
       <Navigation activeSection={activeSection} onNavigate={(sectionId) => {
         const pageIndex = sectionId === 'hero' ? 0 : (navToPageMap[sectionId] || 0);
@@ -83,8 +104,8 @@ function App() {
         setActiveSection(sectionId);
       }} />
       <div
-        className="h-full w-full lg:flex lg:transition-transform lg:duration-1000 lg:ease-in-out"
-        style={{ transform: window.innerWidth >= 1024 ? `translateX(-${currentPage * 100}vw)` : 'none' }}
+        className={isDesktop ? "h-full w-full flex transition-transform duration-1000 ease-in-out" : "h-full w-full"}
+        style={{ transform: isDesktop ? `translateX(-${currentPage * 100}vw)` : 'none' }}
       >
         <Hero />
         <AboutUs onVisible={() => setActiveSection('about')} />

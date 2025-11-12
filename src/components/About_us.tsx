@@ -29,7 +29,7 @@ export default function Story({ onVisible }: StoryProps) {
       <section
         id="about_us"
         ref={sectionRef}
-        className="min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center justify-center overflow-hidden bg-white"
+        className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center justify-center bg-white"
         aria-labelledby="story-heading"
       >
         <div className="w-full h-full flex flex-col lg:flex-row">
@@ -65,7 +65,7 @@ export default function Story({ onVisible }: StoryProps) {
       </section>
 
       <section
-        className="min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-start lg:items-center overflow-hidden bg-white"
+        className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-start lg:items-center bg-white"
         aria-labelledby="design-ethos-heading"
       >
         <div className="w-full px-8 sm:px-12 lg:px-16 xl:px-24 py-8 sm:py-12 lg:py-0 flex">
@@ -128,7 +128,7 @@ export default function Story({ onVisible }: StoryProps) {
       </section>
 
       <section
-        className="min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center justify-center overflow-hidden bg-white"
+        className="snap-start lg:snap-none min-h-screen lg:h-screen lg:w-screen lg:flex-shrink-0 flex items-center justify-center bg-white"
         aria-labelledby="approach-heading"
       >
         <div className="w-full h-full flex items-end">
