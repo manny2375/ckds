@@ -9,20 +9,16 @@ export default function Hero() {
         <iframe
           src="https://customer-mp06svfe1n138f7h.cloudflarestream.com/1f294a6d436628c5de70e1b33a04f0e3/iframe?autoplay=true&loop=true&muted=true&controls=false&poster=https%3A%2F%2Fcustomer-mp06svfe1n138f7h.cloudflarestream.com%2F1f294a6d436628c5de70e1b33a04f0e3%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
           loading="eager"
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full h-full object-cover"
           allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
           allowFullScreen
           style={{
             border: 'none',
-            width: '100%',
-            height: '100%',
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            minWidth: '100%',
-            minHeight: '100%',
+            width: '100vw',
+            height: '100vh',
             objectFit: 'cover',
+            transform: 'scale(1.5)',
+            transformOrigin: 'center',
             pointerEvents: 'none'
           }}
           title="Hero background video"
