@@ -37,35 +37,33 @@ export default function Navigation({ activeSection, onNavigate }: NavigationProp
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        <div className="h-full flex flex-col justify-between p-6 sm:p-12">
-          <div>
-            <div className="mb-16 flex justify-center">
-              <button
-                onClick={() => handleNavigate('hero')}
-                className="hover:opacity-60 transition-opacity"
-              >
-                <img
-                  src="/CKDSlogonavi.png"
-                  alt="Cheryl Kaye Design Studio"
-                  className="h-10 w-auto"
-                />
-              </button>
-            </div>
-
-            <div className="mb-12">
-              <p className="text-sm font-light mb-4">
-                Always curious. Always collaborating.
-              </p>
-              <button
-                onClick={() => handleNavigate('contact')}
-                className="text-sm underline italic hover:opacity-60 transition-opacity"
-              >
-                Let's connect
-              </button>
-            </div>
+        <div className="h-full flex flex-col p-6 sm:p-12">
+          <div className="mb-8 sm:mb-16 flex justify-center">
+            <button
+              onClick={() => handleNavigate('hero')}
+              className="hover:opacity-60 transition-opacity"
+            >
+              <img
+                src="/CKDSlogonavi.png"
+                alt="Cheryl Kaye Design Studio"
+                className="h-10 w-auto"
+              />
+            </button>
           </div>
 
-          <nav className="space-y-8">
+          <div className="mb-12">
+            <p className="text-sm font-light mb-4">
+              Always curious. Always collaborating.
+            </p>
+            <button
+              onClick={() => handleNavigate('contact')}
+              className="text-sm underline italic hover:opacity-60 transition-opacity"
+            >
+              Let's connect
+            </button>
+          </div>
+
+          <nav className="space-y-8 mt-auto">
             {navItems.map((item) => (
               <button
                 key={item.id}
