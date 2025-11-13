@@ -32,7 +32,7 @@ export default function Talent({ onVisible }: TalentProps) {
       aria-labelledby="services-heading"
     >
       <div className="w-full h-full grid laptop:grid-cols-2">
-        <div className="px-4 sm:px-6 md:px-8 laptop:px-6 desktop:px-12 py-8 sm:py-12 laptop:py-0 desktop:py-16 desktop:pt-24 flex flex-col justify-center laptop:h-full">
+        <div className="px-4 sm:px-6 md:px-8 laptop:px-6 desktop:px-12 py-8 sm:py-12 laptop:py-0 desktop:py-14 laptop:pt-0 desktop:pt-20 flex flex-col laptop:justify-center desktop:justify-start laptop:h-full">
           <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-3 laptop:mb-2 desktop:mb-6" aria-hidden="true">CHAPTER 3 — OUR SERVICES</div>
 
           <h2 id="services-heading" className="text-3xl sm:text-4xl laptop:text-2xl desktop:text-4xl font-light leading-tight mb-4 laptop:mb-2 desktop:mb-4">
