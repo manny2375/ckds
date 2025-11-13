@@ -28,21 +28,21 @@ export default function Experiences({ onVisible }: ExperiencesProps) {
     <section
       id="meet-cheryl"
       ref={sectionRef}
-      className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center xl:overflow-hidden bg-[#f8f8f8]"
+      className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center xl:overflow-y-auto bg-[#f8f8f8]"
       aria-labelledby="cheryl-heading"
     >
-      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 xl:px-16 py-8 sm:py-12 lg:py-6 xl:py-8">
-        <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-3 xl:mb-2" aria-hidden="true">
+      <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-16 py-8 sm:py-12 lg:py-8">
+        <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-4 sm:mb-6" aria-hidden="true">
           CHAPTER 2 — MEET CHERYL KAYE
         </div>
 
-        <h2 id="cheryl-heading" className="text-3xl xl:text-2xl font-light leading-tight mb-3 xl:mb-2" style={{ fontFamily: 'Georgia, serif' }}>
+        <h2 id="cheryl-heading" className="text-4xl font-light leading-tight mb-4" style={{ fontFamily: 'Georgia, serif' }}>
           Meet Cheryl Kaye
         </h2>
-        <div className="w-24 h-px bg-gradient-to-r from-black to-transparent mb-6 xl:mb-4"></div>
+        <div className="w-24 h-px bg-gradient-to-r from-black to-transparent mb-8 lg:mb-10"></div>
 
-        <div className="grid lg:grid-cols-[300px,1fr] xl:grid-cols-[280px,1fr] gap-6 lg:gap-10 xl:gap-8 items-start">
-          <div className="w-full max-w-sm mx-auto lg:mx-0 h-[360px] sm:h-[420px] lg:h-[400px] xl:h-[380px] overflow-hidden">
+        <div className="grid lg:grid-cols-[340px,1fr] gap-6 lg:gap-12 items-start">
+          <div className="w-full max-w-sm mx-auto lg:mx-0 h-[360px] sm:h-[420px] lg:h-[480px] overflow-hidden">
             <img
               src="/cherylblack.png"
               alt="Cheryl Kaye, Interior Designer and Founder of CKDS"
@@ -50,7 +50,7 @@ export default function Experiences({ onVisible }: ExperiencesProps) {
             />
           </div>
 
-          <div className="space-y-4 xl:space-y-3 text-[14px] xl:text-[13px] leading-[1.7] xl:leading-[1.6] text-black">
+          <div className="space-y-5 text-[14px] leading-[1.7] text-black">
             <p>
               Design shapes life, influencing how we move, feel, and connect within the spaces around us. For over two decades, I have explored this power, discovering how thoughtful design can inspire, nurture, and transform. My education at the Interior Design Institute of Newport Beach and experience with Hatch Design Group laid the foundation for a career that spans restaurants, hospitality, residential spaces, and the design and manufacturing of custom lighting, giving me a perspective that seamlessly blends creativity with technical insight.
             </p>
@@ -67,11 +67,11 @@ export default function Experiences({ onVisible }: ExperiencesProps) {
               As an entrepreneur, I approach design with both creativity and strategy, understanding the business, the return on investment, and the deeper intentions of every client. As a curator of experiences, I sense the subtle shifts in culture and expectation, and as a visionary, I anticipate the ways trends, behaviors, and lifestyles will unfold. Each project becomes a living story, a space shaped with intention, infused with personality, and brimming with possibility.
             </p>
 
-            <div className="pt-2 xl:pt-1 flex items-center justify-end">
+            <div className="pt-4 flex items-center justify-end">
               <img
                 src="/cksig.jpg"
                 alt="Cheryl Kay Signature"
-                className="h-14 sm:h-16 lg:h-16 xl:h-14 w-auto object-contain mix-blend-multiply"
+                className="h-14 sm:h-16 lg:h-20 w-auto object-contain mix-blend-multiply"
               />
             </div>
           </div>

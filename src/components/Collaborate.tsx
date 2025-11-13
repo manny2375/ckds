@@ -59,10 +59,10 @@ export default function Contact({ onVisible }: ContactProps) {
     <section
       id="contact"
       ref={sectionRef}
-      className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center xl:overflow-hidden bg-white"
+      className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center xl:overflow-y-auto bg-white"
       aria-labelledby="contact-heading"
     >
-      <div className="w-full px-6 sm:px-12 lg:px-16 xl:px-24 py-12 xl:py-8">
+      <div className="w-full px-6 sm:px-12 lg:px-16 xl:px-24 py-12">
         <div className="max-w-2xl">
           <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-4 sm:mb-6">
             CHAPTER 5 — COLLABORATE
@@ -70,19 +70,19 @@ export default function Contact({ onVisible }: ContactProps) {
 
           <h2
             id="contact-heading"
-            className="text-4xl 2xl:text-5xl font-light leading-tight mb-4"
+            className="text-4xl font-light leading-tight mb-4"
             style={{ fontFamily: 'Georgia, serif', color: '#755C53' }}
           >
             Let's tell your story together...
           </h2>
-          <div className="w-24 h-px bg-gradient-to-r from-[#755C53] to-transparent mb-16 xl:mb-12"></div>
+          <div className="w-24 h-px bg-gradient-to-r from-[#755C53] to-transparent mb-20"></div>
         </div>
 
-        <div className="space-y-12 xl:space-y-8 max-w-2xl mx-auto text-center">
+        <div className="space-y-16 max-w-2xl mx-auto text-center">
           <div>
-            <h3 className="text-xl 2xl:text-2xl tracking-wider mb-6 xl:mb-4 text-gray-900">STUDIO</h3>
+            <h3 className="text-lg tracking-wider mb-6 text-gray-900">STUDIO</h3>
 
-            <div className="space-y-4 xl:space-y-3 text-gray-700 text-lg 2xl:text-xl">
+            <div className="space-y-4 text-gray-700">
               <p className="italic">By Appointment Only</p>
               <p className="leading-relaxed">
                 2915 Red Hill Ave., A102<br />
@@ -92,16 +92,16 @@ export default function Contact({ onVisible }: ContactProps) {
           </div>
 
           <div>
-            <p className="italic text-gray-700 mb-2 text-lg 2xl:text-xl">All inquiries</p>
+            <p className="italic text-gray-700 mb-2">All inquiries</p>
             <a
               href="mailto:info@chervikayeds.com"
-              className="text-blue-600 hover:text-blue-700 transition-colors underline text-lg 2xl:text-xl"
+              className="text-blue-600 hover:text-blue-700 transition-colors underline text-base"
             >
               info@cherylkayeds.com
             </a>
           </div>
 
-          <div className="flex gap-3 justify-center items-center text-base 2xl:text-lg text-gray-600 italic">
+          <div className="flex gap-3 justify-center items-center text-sm text-gray-600 italic">
             <a
               href="https://www.linkedin.com/in/cherylkaye"
               target="_blank"
@@ -122,9 +122,9 @@ export default function Contact({ onVisible }: ContactProps) {
           </div>
 
           <div className="pt-8 border-t border-gray-300">
-            <h3 className="text-xl 2xl:text-2xl tracking-wider mb-8 xl:mb-6 text-gray-900">STAY CONNECTED</h3>
+            <h3 className="text-lg tracking-wider mb-8 text-gray-900">STAY CONNECTED</h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6 xl:space-y-4 w-full max-w-sm mx-auto">
+            <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-sm mx-auto">
               <div>
                 <input
                   type="email"
@@ -132,7 +132,7 @@ export default function Contact({ onVisible }: ContactProps) {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 py-4 xl:py-3 bg-gray-100 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all text-base 2xl:text-lg"
+                  className="w-full px-6 py-4 bg-gray-100 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all text-sm"
                   disabled={isSubmitting}
                 />
               </div>
@@ -140,7 +140,7 @@ export default function Contact({ onVisible }: ContactProps) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-6 py-4 xl:py-3 bg-[#755C53] text-white hover:bg-[#8B6F47] transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-base 2xl:text-lg tracking-wider"
+                className="w-full px-6 py-4 bg-[#755C53] text-white hover:bg-[#8B6F47] transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-sm tracking-wider"
               >
                 {isSubmitting ? 'SUBSCRIBING...' : 'SUBSCRIBE'}
               </button>
