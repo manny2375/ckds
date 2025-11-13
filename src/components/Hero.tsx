@@ -26,7 +26,7 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 text-white px-4 sm:px-6 max-w-7xl mx-auto w-full h-full flex flex-col">
-        <div className="pt-4 sm:pt-16 md:pt-20 lg:pt-24 flex justify-center">
+        <div className="pt-20 sm:pt-16 md:pt-20 lg:pt-24 flex justify-center">
           <img
             src="/CopyCKDS_FULL.png"
             alt="Cheryl Kaye Design Studio"
