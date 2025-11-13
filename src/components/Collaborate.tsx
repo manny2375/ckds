@@ -59,10 +59,10 @@ export default function Contact({ onVisible }: ContactProps) {
     <section
       id="contact"
       ref={sectionRef}
-      className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center xl:overflow-y-auto bg-white"
+      className="snap-start laptop:snap-none min-h-[100svh] md:min-h-[90dvh] laptop:h-screen laptop:w-screen laptop:flex-shrink-0 flex items-center laptop:overflow-y-auto bg-white"
       aria-labelledby="contact-heading"
     >
-      <div className="w-full px-6 sm:px-12 lg:px-16 xl:px-24 py-12">
+      <div className="w-full px-6 sm:px-10 md:px-12 laptop:px-14 desktop:px-24 py-12">
         <div className="max-w-2xl">
           <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-4 sm:mb-6">
             CHAPTER 5 — COLLABORATE
@@ -70,7 +70,7 @@ export default function Contact({ onVisible }: ContactProps) {
 
           <h2
             id="contact-heading"
-            className="text-4xl font-light leading-tight mb-4"
+            className="text-3xl sm:text-4xl laptop:text-3xl desktop:text-4xl font-light leading-tight mb-4"
             style={{ fontFamily: 'Georgia, serif', color: '#755C53' }}
           >
             Let's tell your story together...

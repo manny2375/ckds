@@ -29,11 +29,11 @@ export default function Story({ onVisible }: StoryProps) {
       <section
         id="about"
         ref={sectionRef}
-        className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center justify-center bg-white"
+        className="snap-start laptop:snap-none min-h-[100svh] md:min-h-[90dvh] laptop:h-screen laptop:w-screen laptop:flex-shrink-0 flex items-center justify-center bg-white"
         aria-labelledby="story-heading"
       >
-        <div className="w-full h-full flex flex-col lg:flex-row">
-          <div className="w-full lg:w-1/2 px-8 sm:px-12 lg:px-16 xl:px-24 py-12 lg:py-24 flex flex-col justify-start lg:pt-32">
+        <div className="w-full h-full flex flex-col laptop:flex-row">
+          <div className="w-full laptop:w-1/2 px-6 sm:px-10 md:px-12 laptop:px-14 desktop:px-24 py-12 laptop:py-20 desktop:py-24 flex flex-col justify-start laptop:pt-28 desktop:pt-32">
             <div className="max-w-xl">
               <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-4 sm:mb-6" aria-hidden="true">
                 CHAPTER 1 — ABOUT US
@@ -54,7 +54,7 @@ export default function Story({ onVisible }: StoryProps) {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2 min-h-[50vh] lg:h-full border-l border-gray-200 px-8 sm:px-12 lg:px-16 xl:px-24 py-12 lg:py-24 flex items-end lg:pb-32">
+          <div className="w-full laptop:w-1/2 min-h-[50vh] laptop:h-full border-l border-gray-200 px-6 sm:px-10 md:px-12 laptop:px-14 desktop:px-24 py-12 laptop:py-20 desktop:py-24 flex items-end laptop:pb-28 desktop:pb-32">
             <div className="max-w-xl">
               <p className="text-[15px] text-gray-800 leading-relaxed mb-6">
                 CKDS is a boutique interior design studio shaping hospitality, restaurants, retail, clubhouses, commercial environments, and luxury residences. Every space we craft is designed to leave a lasting imprint on those who experience it. We merge strategy, aesthetics, and foresight to anticipate how lifestyle will evolve — designing not just for today, but for how people and communities will thrive tomorrow. Every detail is purposeful, turning design into a story that elevates the human experience.
@@ -65,10 +65,10 @@ export default function Story({ onVisible }: StoryProps) {
       </section>
 
       <section
-        className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-start xl:items-center bg-white"
+        className="snap-start laptop:snap-none min-h-[100svh] md:min-h-[90dvh] laptop:h-screen laptop:w-screen laptop:flex-shrink-0 flex items-start laptop:items-center bg-white"
         aria-labelledby="design-ethos-heading"
       >
-        <div className="w-full px-8 sm:px-12 lg:px-16 xl:px-24 py-8 sm:py-12 lg:py-0 flex">
+        <div className="w-full px-6 sm:px-10 md:px-12 laptop:px-14 desktop:px-24 py-8 sm:py-12 laptop:py-0 flex">
           <div className="w-full max-w-7xl mx-auto flex flex-col">
             <div className="flex items-center mb-12 lg:mb-16">
               <h3 id="design-ethos-heading" className="text-2xl sm:text-3xl font-light tracking-wide whitespace-nowrap pr-8">Our Design Ethos</h3>
@@ -128,11 +128,11 @@ export default function Story({ onVisible }: StoryProps) {
       </section>
 
       <section
-        className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center justify-center bg-white"
+        className="snap-start laptop:snap-none min-h-[100svh] md:min-h-[90dvh] laptop:h-screen laptop:w-screen laptop:flex-shrink-0 flex items-center justify-center bg-white"
         aria-labelledby="approach-heading"
       >
-        <div className="w-full h-full flex flex-col lg:flex-row lg:items-end">
-          <div className="w-full lg:w-1/2 h-[40vh] lg:h-full">
+        <div className="w-full h-full flex flex-col laptop:flex-row laptop:items-end">
+          <div className="w-full laptop:w-1/2 h-[40vh] laptop:h-full">
             <img
               src="/geraldine-D8KM6mUP5bI-unsplash.jpg"
               alt="Interior design detail showcasing craftsmanship"
@@ -140,7 +140,7 @@ export default function Story({ onVisible }: StoryProps) {
             />
           </div>
 
-          <div className="w-full lg:w-1/2 flex-1 lg:h-full flex flex-col justify-center lg:justify-end px-8 sm:px-12 lg:px-16 xl:px-24 py-12 lg:pb-24">
+          <div className="w-full laptop:w-1/2 flex-1 laptop:h-full flex flex-col justify-center laptop:justify-end px-6 sm:px-10 md:px-12 laptop:px-14 desktop:px-24 py-12 laptop:pb-20 desktop:pb-24">
             <div className="max-w-xl">
               <h3 id="approach-heading" className="text-4xl font-light mb-8 tracking-tight text-black" style={{ fontFamily: 'Georgia, serif' }}>
                 Our Approach
