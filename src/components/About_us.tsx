@@ -75,7 +75,7 @@ export default function Story({ onVisible }: StoryProps) {
               <div className="flex-1 h-px bg-gray-300"></div>
             </div>
 
-            <div className="flex flex-col laptop:flex-row gap-8 laptop:gap-4 desktop:gap-16">
+            <div className="flex flex-col laptop:flex-row gap-8 laptop:gap-8 desktop:gap-16">
               <div className="laptop:w-1/4 desktop:w-1/3 flex-shrink-0"></div>
               <div className="laptop:w-3/4 desktop:w-2/3">
                 <div className="grid sm:grid-cols-2 gap-x-8 laptop:gap-x-6 sm:gap-x-12 gap-y-8 laptop:gap-y-3 sm:gap-y-10">
