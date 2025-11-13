@@ -105,11 +105,12 @@ className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen x
           </p>
         </div>
 
-        <div className="hidden lg:block h-full">
+        <div className="hidden lg:block h-full overflow-hidden">
           <img
             src="/beaumont-Kv_XgKpByUk-unsplash.jpg"
             alt="Interior design detail"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
+            style={{ objectPosition: 'center 40%' }}
           />
         </div>
       </div>
