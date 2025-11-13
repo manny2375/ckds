@@ -64,25 +64,25 @@ export default function Contact({ onVisible }: ContactProps) {
     >
       <div className="w-full px-6 sm:px-10 md:px-12 laptop:px-8 desktop:px-24 py-12 laptop:py-6 laptop:my-auto">
         <div className="max-w-2xl">
-          <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-3 laptop:mb-1 desktop:mb-6">
+          <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-3 laptop:mb-0.5 desktop:mb-6">
             CHAPTER 5 — COLLABORATE
           </div>
 
           <h2
             id="contact-heading"
-            className="text-3xl sm:text-4xl laptop:text-xl desktop:text-4xl font-light leading-tight mb-3 laptop:mb-1.5 desktop:mb-4"
+            className="text-3xl sm:text-4xl laptop:text-xl desktop:text-4xl font-light leading-tight mb-3 laptop:mb-1 desktop:mb-4"
             style={{ fontFamily: 'Georgia, serif', color: '#755C53' }}
           >
             Let's tell your story together...
           </h2>
-          <div className="w-24 h-px bg-gradient-to-r from-[#755C53] to-transparent mb-12 laptop:mb-4 desktop:mb-20"></div>
+          <div className="w-24 h-px bg-gradient-to-r from-[#755C53] to-transparent mb-12 laptop:mb-2 desktop:mb-20"></div>
         </div>
 
-        <div className="space-y-12 laptop:space-y-4 desktop:space-y-16 max-w-2xl mx-auto text-center">
+        <div className="space-y-12 laptop:space-y-2 desktop:space-y-16 max-w-2xl mx-auto text-center">
           <div>
-            <h3 className="text-lg laptop:text-sm desktop:text-lg tracking-wider mb-6 laptop:mb-2 text-gray-900">STUDIO</h3>
+            <h3 className="text-lg laptop:text-sm desktop:text-lg tracking-wider mb-6 laptop:mb-1 text-gray-900">STUDIO</h3>
 
-            <div className="space-y-4 laptop:space-y-1 text-gray-700 laptop:text-xs desktop:text-[14px]">
+            <div className="space-y-4 laptop:space-y-0.5 text-gray-700 laptop:text-xs desktop:text-[14px]">
               <p className="italic">By Appointment Only</p>
               <p className="leading-relaxed">
                 2915 Red Hill Ave., A102<br />
@@ -92,7 +92,7 @@ export default function Contact({ onVisible }: ContactProps) {
           </div>
 
           <div>
-            <p className="italic text-gray-700 laptop:text-xs desktop:text-[14px] mb-2 laptop:mb-1">All inquiries</p>
+            <p className="italic text-gray-700 laptop:text-xs desktop:text-[14px] mb-2 laptop:mb-0.5">All inquiries</p>
             <a
               href="mailto:info@chervikayeds.com"
               className="text-blue-600 hover:text-blue-700 transition-colors underline text-base laptop:text-sm desktop:text-base"
@@ -121,10 +121,10 @@ export default function Contact({ onVisible }: ContactProps) {
             </a>
           </div>
 
-          <div className="pt-8 laptop:pt-4 border-t border-gray-300">
-            <h3 className="text-lg laptop:text-sm desktop:text-lg tracking-wider mb-8 laptop:mb-3 text-gray-900">STAY CONNECTED</h3>
+          <div className="pt-8 laptop:pt-2 border-t border-gray-300">
+            <h3 className="text-lg laptop:text-sm desktop:text-lg tracking-wider mb-8 laptop:mb-1.5 text-gray-900">STAY CONNECTED</h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6 laptop:space-y-3 w-full max-w-sm mx-auto">
+            <form onSubmit={handleSubmit} className="space-y-6 laptop:space-y-2 w-full max-w-sm mx-auto">
               <div>
                 <input
                   type="email"
