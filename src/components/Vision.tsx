@@ -35,30 +35,19 @@ export default function Vision({ onVisible }: VisionProps) {
         <iframe
           src="https://customer-mp06svfe1n138f7h.cloudflarestream.com/f92a0b636a17126f1f05dcc4d92ecaa6/iframe?autoplay=true&loop=true&muted=true&controls=false&poster=https%3A%2F%2Fcustomer-mp06svfe1n138f7h.cloudflarestream.com%2Ff92a0b636a17126f1f05dcc4d92ecaa6%2Fthumbnails%2Fthumbnail.jpg%3Ftime%3D%26height%3D600"
           loading="lazy"
-          className="absolute object-cover"
+          className="absolute inset-0 w-full h-full object-cover xl:scale-150"
           allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
           allowFullScreen
           style={{
             border: 'none',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            minWidth: '100%',
-            minHeight: '100%',
             width: '100vw',
             height: '100vh',
             objectFit: 'cover',
+            transformOrigin: 'center',
             pointerEvents: 'none'
           }}
           title="Vision background video"
         />
-        <style>{`
-          @media (min-width: 1280px) {
-            iframe[title="Vision background video"] {
-              transform: translate(-50%, -50%) scale(1.5);
-            }
-          }
-        `}</style>
       </div>
       <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 text-center py-8 sm:py-0">
         <p className="text-base sm:text-lg lg:text-xl leading-relaxed" style={{ color: '#D6D1C7' }}>
