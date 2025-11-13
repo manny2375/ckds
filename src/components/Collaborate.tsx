@@ -59,30 +59,30 @@ export default function Contact({ onVisible }: ContactProps) {
     <section
       id="contact"
       ref={sectionRef}
-      className="snap-start laptop:snap-none min-h-[100svh] md:min-h-[90dvh] laptop:h-screen laptop:w-screen laptop:flex-shrink-0 flex items-center bg-white"
+      className="snap-start laptop:snap-none min-h-[100svh] md:min-h-[90dvh] laptop:h-screen laptop:w-screen laptop:flex-shrink-0 flex laptop:items-center bg-white"
       aria-labelledby="contact-heading"
     >
-      <div className="w-full px-6 sm:px-10 md:px-12 laptop:px-8 desktop:px-24 py-12 laptop:py-0">
+      <div className="w-full px-6 sm:px-10 md:px-12 laptop:px-8 desktop:px-24 py-12 laptop:py-6 laptop:my-auto">
         <div className="max-w-2xl">
-          <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-3 laptop:mb-2 desktop:mb-6">
+          <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-3 laptop:mb-1 desktop:mb-6">
             CHAPTER 5 — COLLABORATE
           </div>
 
           <h2
             id="contact-heading"
-            className="text-3xl sm:text-4xl laptop:text-2xl desktop:text-4xl font-light leading-tight mb-3 laptop:mb-2 desktop:mb-4"
+            className="text-3xl sm:text-4xl laptop:text-xl desktop:text-4xl font-light leading-tight mb-3 laptop:mb-1.5 desktop:mb-4"
             style={{ fontFamily: 'Georgia, serif', color: '#755C53' }}
           >
             Let's tell your story together...
           </h2>
-          <div className="w-24 h-px bg-gradient-to-r from-[#755C53] to-transparent mb-12 laptop:mb-6 desktop:mb-20"></div>
+          <div className="w-24 h-px bg-gradient-to-r from-[#755C53] to-transparent mb-12 laptop:mb-4 desktop:mb-20"></div>
         </div>
 
-        <div className="space-y-12 laptop:space-y-6 desktop:space-y-16 max-w-2xl mx-auto text-center">
+        <div className="space-y-12 laptop:space-y-4 desktop:space-y-16 max-w-2xl mx-auto text-center">
           <div>
-            <h3 className="text-lg laptop:text-base tracking-wider mb-6 laptop:mb-4 text-gray-900">STUDIO</h3>
+            <h3 className="text-lg laptop:text-sm tracking-wider mb-6 laptop:mb-2 text-gray-900">STUDIO</h3>
 
-            <div className="space-y-4 laptop:space-y-2 text-gray-700 laptop:text-sm">
+            <div className="space-y-4 laptop:space-y-1 text-gray-700 laptop:text-xs">
               <p className="italic">By Appointment Only</p>
               <p className="leading-relaxed">
                 2915 Red Hill Ave., A102<br />
@@ -92,10 +92,10 @@ export default function Contact({ onVisible }: ContactProps) {
           </div>
 
           <div>
-            <p className="italic text-gray-700 laptop:text-sm mb-2">All inquiries</p>
+            <p className="italic text-gray-700 laptop:text-xs mb-2 laptop:mb-1">All inquiries</p>
             <a
               href="mailto:info@chervikayeds.com"
-              className="text-blue-600 hover:text-blue-700 transition-colors underline text-base"
+              className="text-blue-600 hover:text-blue-700 transition-colors underline text-base laptop:text-sm"
             >
               info@cherylkayeds.com
             </a>
@@ -121,10 +121,10 @@ export default function Contact({ onVisible }: ContactProps) {
             </a>
           </div>
 
-          <div className="pt-8 laptop:pt-6 border-t border-gray-300">
-            <h3 className="text-lg laptop:text-base tracking-wider mb-8 laptop:mb-4 text-gray-900">STAY CONNECTED</h3>
+          <div className="pt-8 laptop:pt-4 border-t border-gray-300">
+            <h3 className="text-lg laptop:text-sm tracking-wider mb-8 laptop:mb-3 text-gray-900">STAY CONNECTED</h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6 laptop:space-y-4 w-full max-w-sm mx-auto">
+            <form onSubmit={handleSubmit} className="space-y-6 laptop:space-y-3 w-full max-w-sm mx-auto">
               <div>
                 <input
                   type="email"
@@ -132,7 +132,7 @@ export default function Contact({ onVisible }: ContactProps) {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 py-4 bg-gray-100 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all text-sm"
+                  className="w-full px-6 py-4 laptop:py-3 bg-gray-100 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all text-sm laptop:text-xs"
                   disabled={isSubmitting}
                 />
               </div>
@@ -140,7 +140,7 @@ export default function Contact({ onVisible }: ContactProps) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-6 py-4 bg-[#755C53] text-white hover:bg-[#8B6F47] transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-sm tracking-wider"
+                className="w-full px-6 py-4 laptop:py-3 bg-[#755C53] text-white hover:bg-[#8B6F47] transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-sm laptop:text-xs tracking-wider"
               >
                 {isSubmitting ? 'SUBSCRIBING...' : 'SUBSCRIBE'}
               </button>
