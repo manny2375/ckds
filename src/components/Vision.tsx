@@ -49,7 +49,7 @@ export default function Vision({ onVisible }: VisionProps) {
           title="Vision background video"
         />
       </div>
-      <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8 laptop:px-10 desktop:px-12 text-center py-8 sm:py-0 laptop:-mt-32">
+      <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8 laptop:px-10 desktop:px-12 text-center py-8 sm:py-0">
         <p className="text-base sm:text-lg laptop:text-lg desktop:text-xl leading-relaxed" style={{ color: '#D6D1C7' }}>
           Our work exists at the intersection of creativity and purpose — where artistry meets intelligence, and every decision is driven by meaning. With each project, we redefine what design can achieve: spaces that inspire, brands that endure, and experiences that leave a mark. What follows is a glimpse into how we bring that vision to life where imagination becomes tangible, and design begins to tell its story.
         </p>
