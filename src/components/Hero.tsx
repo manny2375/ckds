@@ -14,11 +14,9 @@ export default function Hero() {
           allowFullScreen
           style={{
             border: 'none',
-            width: '100vw',
-            height: '100vh',
+            width: '100%',
+            height: '100%',
             objectFit: 'cover',
-            transform: 'scale(1.5)',
-            transformOrigin: 'center',
             pointerEvents: 'none'
           }}
           title="Hero background video"
