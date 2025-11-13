@@ -80,9 +80,9 @@ export default function Contact({ onVisible }: ContactProps) {
 
         <div className="space-y-12 laptop:space-y-4 desktop:space-y-16 max-w-2xl mx-auto text-center">
           <div>
-            <h3 className="text-lg laptop:text-sm tracking-wider mb-6 laptop:mb-2 text-gray-900">STUDIO</h3>
+            <h3 className="text-lg laptop:text-sm desktop:text-lg tracking-wider mb-6 laptop:mb-2 text-gray-900">STUDIO</h3>
 
-            <div className="space-y-4 laptop:space-y-1 text-gray-700 laptop:text-xs">
+            <div className="space-y-4 laptop:space-y-1 text-gray-700 laptop:text-xs desktop:text-[14px]">
               <p className="italic">By Appointment Only</p>
               <p className="leading-relaxed">
                 2915 Red Hill Ave., A102<br />
@@ -92,16 +92,16 @@ export default function Contact({ onVisible }: ContactProps) {
           </div>
 
           <div>
-            <p className="italic text-gray-700 laptop:text-xs mb-2 laptop:mb-1">All inquiries</p>
+            <p className="italic text-gray-700 laptop:text-xs desktop:text-[14px] mb-2 laptop:mb-1">All inquiries</p>
             <a
               href="mailto:info@chervikayeds.com"
-              className="text-blue-600 hover:text-blue-700 transition-colors underline text-base laptop:text-sm"
+              className="text-blue-600 hover:text-blue-700 transition-colors underline text-base laptop:text-sm desktop:text-base"
             >
               info@cherylkayeds.com
             </a>
           </div>
 
-          <div className="flex gap-3 justify-center items-center text-sm laptop:text-xs text-gray-600 italic">
+          <div className="flex gap-3 justify-center items-center text-sm laptop:text-xs desktop:text-sm text-gray-600 italic">
             <a
               href="https://www.linkedin.com/in/cherylkaye"
               target="_blank"
@@ -122,7 +122,7 @@ export default function Contact({ onVisible }: ContactProps) {
           </div>
 
           <div className="pt-8 laptop:pt-4 border-t border-gray-300">
-            <h3 className="text-lg laptop:text-sm tracking-wider mb-8 laptop:mb-3 text-gray-900">STAY CONNECTED</h3>
+            <h3 className="text-lg laptop:text-sm desktop:text-lg tracking-wider mb-8 laptop:mb-3 text-gray-900">STAY CONNECTED</h3>
 
             <form onSubmit={handleSubmit} className="space-y-6 laptop:space-y-3 w-full max-w-sm mx-auto">
               <div>
@@ -132,7 +132,7 @@ export default function Contact({ onVisible }: ContactProps) {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 py-4 laptop:py-3 bg-gray-100 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all text-sm laptop:text-xs"
+                  className="w-full px-6 py-4 laptop:py-3 bg-gray-100 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 transition-all text-sm laptop:text-xs desktop:text-sm"
                   disabled={isSubmitting}
                 />
               </div>
@@ -140,7 +140,7 @@ export default function Contact({ onVisible }: ContactProps) {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-6 py-4 laptop:py-3 bg-[#755C53] text-white hover:bg-[#8B6F47] transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-sm laptop:text-xs tracking-wider"
+                className="w-full px-6 py-4 laptop:py-3 bg-[#755C53] text-white hover:bg-[#8B6F47] transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed text-sm laptop:text-xs desktop:text-sm tracking-wider"
               >
                 {isSubmitting ? 'SUBSCRIBING...' : 'SUBSCRIBE'}
               </button>
