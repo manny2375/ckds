@@ -62,23 +62,23 @@ export default function Contact({ onVisible }: ContactProps) {
       className="snap-start laptop:snap-none min-h-[100svh] md:min-h-[90dvh] laptop:h-screen laptop:w-screen laptop:flex-shrink-0 flex items-center laptop:overflow-y-auto bg-white"
       aria-labelledby="contact-heading"
     >
-      <div className="w-full px-6 sm:px-10 md:px-12 laptop:px-14 desktop:px-24 py-12">
+      <div className="w-full px-6 sm:px-10 md:px-12 laptop:px-8 desktop:px-24 py-12 laptop:py-10 laptop:overflow-y-auto laptop:max-h-screen">
         <div className="max-w-2xl">
-          <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-4 sm:mb-6">
+          <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-3 laptop:mb-2 sm:mb-6">
             CHAPTER 5 — COLLABORATE
           </div>
 
           <h2
             id="contact-heading"
-            className="text-3xl sm:text-4xl laptop:text-3xl desktop:text-4xl font-light leading-tight mb-4"
+            className="text-3xl sm:text-4xl laptop:text-2xl desktop:text-4xl font-light leading-tight mb-3 laptop:mb-2"
             style={{ fontFamily: 'Georgia, serif', color: '#755C53' }}
           >
             Let's tell your story together...
           </h2>
-          <div className="w-24 h-px bg-gradient-to-r from-[#755C53] to-transparent mb-20"></div>
+          <div className="w-24 h-px bg-gradient-to-r from-[#755C53] to-transparent mb-12 laptop:mb-8 desktop:mb-20"></div>
         </div>
 
-        <div className="space-y-16 max-w-2xl mx-auto text-center">
+        <div className="space-y-12 laptop:space-y-8 desktop:space-y-16 max-w-2xl mx-auto text-center">
           <div>
             <h3 className="text-lg tracking-wider mb-6 text-gray-900">STUDIO</h3>
 
