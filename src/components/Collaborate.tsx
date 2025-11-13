@@ -70,7 +70,7 @@ export default function Contact({ onVisible }: ContactProps) {
 
           <h2
             id="contact-heading"
-            className="text-4xl font-light leading-tight mb-4"
+            className="text-4xl 2xl:text-5xl font-light leading-tight mb-4"
             style={{ fontFamily: 'Georgia, serif', color: '#755C53' }}
           >
             Let's tell your story together...
@@ -80,9 +80,9 @@ export default function Contact({ onVisible }: ContactProps) {
 
         <div className="space-y-12 xl:space-y-8 max-w-2xl mx-auto text-center">
           <div>
-            <h3 className="text-lg tracking-wider mb-6 xl:mb-4 text-gray-900">STUDIO</h3>
+            <h3 className="text-lg 2xl:text-xl tracking-wider mb-6 xl:mb-4 text-gray-900">STUDIO</h3>
 
-            <div className="space-y-4 xl:space-y-3 text-gray-700">
+            <div className="space-y-4 xl:space-y-3 text-gray-700 text-base">
               <p className="italic">By Appointment Only</p>
               <p className="leading-relaxed">
                 2915 Red Hill Ave., A102<br />
