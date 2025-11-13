@@ -82,9 +82,17 @@ function App() {
       style={{ touchAction: isDesktopLike ? 'auto' : 'pan-y pinch-zoom' }}
     >
       <Navigation activeSection={activeSection} onNavigate={(sectionId) => {
-        const pageIndex = sectionId === 'hero' ? 0 : (navToPageMap[sectionId] || 0);
-        setCurrentPage(pageIndex);
-        setActiveSection(sectionId);
+        if (!isDesktopLike) {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+          setActiveSection(sectionId);
+        } else {
+          const pageIndex = sectionId === 'hero' ? 0 : (navToPageMap[sectionId] || 0);
+          setCurrentPage(pageIndex);
+          setActiveSection(sectionId);
+        }
       }} />
       <div
         className={isDesktopLike ? "h-full flex transition-transform duration-1000 ease-in-out" : "w-full"}

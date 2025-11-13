@@ -27,7 +27,7 @@ export default function Story({ onVisible }: StoryProps) {
   return (
     <>
       <section
-        id="about_us"
+        id="about"
         ref={sectionRef}
         className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center justify-center bg-white"
         aria-labelledby="story-heading"

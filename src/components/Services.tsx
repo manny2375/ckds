@@ -26,7 +26,7 @@ export default function Talent({ onVisible }: TalentProps) {
 
   return (
     <section
-      id="our_services"
+      id="services"
       ref={sectionRef}
       className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-start"
       aria-labelledby="services-heading"

@@ -26,7 +26,7 @@ export default function Experiences({ onVisible }: ExperiencesProps) {
 
   return (
     <section
-      id="meet_cheryl_kaye"
+      id="meet-cheryl"
       ref={sectionRef}
       className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 flex items-center xl:overflow-y-auto bg-[#f8f8f8]"
       aria-labelledby="cheryl-heading"

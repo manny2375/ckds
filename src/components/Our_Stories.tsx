@@ -26,7 +26,7 @@ export default function Recognition({ onVisible }: RecognitionProps) {
 
   return (
     <section
-      id="our_stories"
+      id="stories"
       ref={sectionRef}
       className="snap-start xl:snap-none min-h-[100svh] md:min-h-[90dvh] xl:h-screen xl:w-screen xl:flex-shrink-0 bg-[#E8D5C4]"
       aria-labelledby="recognition-heading"
