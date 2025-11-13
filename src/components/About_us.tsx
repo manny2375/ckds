@@ -70,7 +70,7 @@ export default function Story({ onVisible }: StoryProps) {
       >
         <div className="w-full px-6 sm:px-10 md:px-12 laptop:px-8 desktop:px-24 py-8 sm:py-12 laptop:py-0 flex laptop:items-center laptop:h-full">
           <div className="w-full max-w-7xl mx-auto flex flex-col laptop:justify-center">
-            <div className="flex items-center mb-12 laptop:mb-6 desktop:mb-16">
+            <div className="flex items-center mb-12 laptop:mb-3 laptop:mt-12 desktop:mb-16">
               <h3 id="design-ethos-heading" className="text-2xl sm:text-3xl laptop:text-xl desktop:text-3xl font-light tracking-wide whitespace-nowrap pr-8">Our Design Ethos</h3>
               <div className="flex-1 h-px bg-gray-300"></div>
             </div>
@@ -78,7 +78,7 @@ export default function Story({ onVisible }: StoryProps) {
             <div className="flex flex-col laptop:flex-row gap-8 laptop:gap-8 desktop:gap-16">
               <div className="laptop:w-1/4 desktop:w-1/3 flex-shrink-0"></div>
               <div className="laptop:w-3/4 desktop:w-2/3">
-                <div className="grid sm:grid-cols-2 gap-x-8 laptop:gap-x-6 sm:gap-x-12 gap-y-8 laptop:gap-y-6 sm:gap-y-10">
+                <div className="grid sm:grid-cols-2 gap-x-8 laptop:gap-x-6 sm:gap-x-12 gap-y-8 laptop:gap-y-3 sm:gap-y-10">
                 <div>
                   <h4 className="text-lg sm:text-xl laptop:text-base desktop:text-xl font-light mb-3 laptop:mb-2" style={{ color: '#755C53' }}>Elevate Human Experiences</h4>
                   <p className="text-gray-600 leading-relaxed text-sm laptop:text-xs desktop:text-sm">
