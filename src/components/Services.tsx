@@ -32,13 +32,13 @@ export default function Talent({ onVisible }: TalentProps) {
       aria-labelledby="services-heading"
     >
       <div className="w-full h-full grid laptop:grid-cols-2 laptop:overflow-hidden">
-        <div className="px-4 sm:px-6 md:px-8 laptop:px-4 desktop:px-12 py-8 sm:py-12 laptop:py-4 desktop:py-14 laptop:pt-1 desktop:pt-20 flex flex-col laptop:justify-start desktop:justify-start laptop:h-screen laptop:overflow-hidden">
-          <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-3 laptop:mb-0 laptop:mt-0 desktop:mb-6" aria-hidden="true">CHAPTER 3 — OUR SERVICES</div>
+        <div className="px-4 sm:px-6 md:px-8 laptop:px-4 desktop:px-12 py-8 sm:py-12 laptop:py-4 desktop:py-14 laptop:pt-1 desktop:pt-20 flex flex-col laptop:justify-start desktop:justify-start laptop:h-screen laptop:overflow-hidden relative">
+          <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-3 laptop:absolute laptop:top-1 laptop:left-4 laptop:mb-0 desktop:mb-6 desktop:relative desktop:top-auto desktop:left-auto" aria-hidden="true">CHAPTER 3 — OUR SERVICES</div>
 
-          <h2 id="services-heading" className="text-3xl sm:text-4xl laptop:text-base desktop:text-4xl font-light leading-tight mb-4 laptop:mb-0 desktop:mb-4">
+          <h2 id="services-heading" className="text-3xl sm:text-4xl laptop:text-base desktop:text-4xl font-light leading-tight mb-4 laptop:mb-0 laptop:mt-4 desktop:mb-4 desktop:mt-0">
             Our Services
           </h2>
-          <div className="w-24 h-px bg-gradient-to-r from-black to-transparent mb-6 laptop:mb-0.5 desktop:mb-8"></div>
+          <div className="w-24 h-px bg-gradient-to-r from-black to-transparent mb-6 laptop:mb-0 desktop:mb-8"></div>
 
           <div className="space-y-4 laptop:space-y-0 desktop:space-y-6 text-sm laptop:text-[8.5px] desktop:text-[15px] text-gray-900 leading-relaxed laptop:leading-[1.2] mb-8 laptop:mb-0.5 desktop:mb-10">
             <p>
