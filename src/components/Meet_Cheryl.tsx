@@ -32,7 +32,7 @@ export default function Experiences({ onVisible }: ExperiencesProps) {
       aria-labelledby="cheryl-heading"
     >
       <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-10 laptop:px-8 desktop:px-16 py-8 sm:py-12 laptop:py-0">
-        <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-4 laptop:mb-2 sm:mb-6" aria-hidden="true">
+        <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-4 laptop:mb-4 sm:mb-6 laptop:mt-4" aria-hidden="true">
           CHAPTER 2 — MEET CHERYL KAYE
         </div>
 
@@ -67,11 +67,11 @@ export default function Experiences({ onVisible }: ExperiencesProps) {
               As an entrepreneur, I approach design with both creativity and strategy, understanding the business, the return on investment, and the deeper intentions of every client. As a curator of experiences, I sense the subtle shifts in culture and expectation, and as a visionary, I anticipate the ways trends, behaviors, and lifestyles will unfold. Each project becomes a living story, a space shaped with intention, infused with personality, and brimming with possibility.
             </p>
 
-            <div className="pt-4 flex items-center justify-end">
+            <div className="pt-4 laptop:pt-1 desktop:pt-4 flex items-center justify-end">
               <img
                 src="/cksig.jpg"
                 alt="Cheryl Kay Signature"
-                className="h-14 sm:h-16 lg:h-20 w-auto object-contain mix-blend-multiply"
+                className="h-14 sm:h-16 lg:h-20 laptop:h-12 desktop:h-20 w-auto object-contain mix-blend-multiply"
               />
             </div>
           </div>
