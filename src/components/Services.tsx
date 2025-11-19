@@ -35,7 +35,7 @@ export default function Talent({ onVisible }: TalentProps) {
         <div className="px-4 sm:px-6 md:px-8 laptop:px-4 desktop:px-12 py-8 sm:py-12 laptop:py-8 desktop:py-14 laptop:pt-0 desktop:pt-20 flex flex-col laptop:justify-center desktop:justify-start laptop:h-screen laptop:overflow-hidden laptop:pb-8 relative">
           <div className="text-xs sm:text-sm tracking-widest text-gray-400 mb-3 laptop:absolute laptop:top-0 laptop:left-4 laptop:mb-0 desktop:mb-6 desktop:relative desktop:top-auto desktop:left-auto" aria-hidden="true">CHAPTER 3 — OUR SERVICES</div>
 
-          <h2 id="services-heading" className="text-3xl sm:text-4xl laptop:text-[13px] desktop:text-4xl font-light leading-tight mb-4 laptop:mb-0 laptop:mt-2 desktop:mb-4 desktop:mt-0" style={{ fontFamily: 'Georgia, serif', color: '#755C53' }}>
+          <h2 id="services-heading" className="text-3xl sm:text-4xl laptop:text-[13px] desktop:text-4xl font-light leading-tight mb-4 laptop:mb-0 laptop:mt-2 desktop:mb-4 desktop:mt-0 text-black" style={{ fontFamily: 'Georgia, serif' }}>
             Our Services
           </h2>
           <div className="w-24 h-px bg-gradient-to-r from-black to-transparent mb-6 laptop:mb-0 desktop:mb-8"></div>
@@ -55,7 +55,7 @@ export default function Talent({ onVisible }: TalentProps) {
           </div>
 
           <div className="mb-8 laptop:mb-0 desktop:mb-10">
-            <h3 className="text-base laptop:text-[8px] desktop:text-lg font-semibold mb-4 laptop:mb-0 desktop:mb-6" style={{ color: '#755C53' }}>Our services include:</h3>
+            <h3 className="text-base laptop:text-[8px] desktop:text-lg font-semibold mb-4 laptop:mb-0 desktop:mb-6 text-black">Our services include:</h3>
             <div className="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 laptop:gap-x-2 laptop:gap-y-0 text-sm laptop:text-[7.5px] laptop:leading-[1.15] desktop:text-[15px] text-gray-600">
               <div className="flex items-start">
                 <span className="mr-2">•</span>
