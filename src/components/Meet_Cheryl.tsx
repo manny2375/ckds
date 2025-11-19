@@ -50,7 +50,7 @@ export default function Experiences({ onVisible }: ExperiencesProps) {
             />
           </div>
 
-          <div className="space-y-4 laptop:space-y-1 desktop:space-y-5 text-[13px] laptop:text-[11px] desktop:text-[14px] leading-[1.7] laptop:leading-[1.4] desktop:leading-[1.7] text-black">
+          <div className="space-y-4 laptop:space-y-1 desktop:space-y-5 text-sm laptop:text-xs desktop:text-sm leading-[1.7] laptop:leading-[1.4] desktop:leading-[1.7] text-gray-600">
             <p>
               Design shapes life, influencing how we move, feel, and connect within the spaces around us. For over two decades, I have explored this power, discovering how thoughtful design can inspire, nurture, and transform. My education at the Interior Design Institute of Newport Beach and experience with Hatch Design Group laid the foundation for a career that spans restaurants, hospitality, residential spaces, and the design and manufacturing of custom lighting, giving me a perspective that seamlessly blends creativity with technical insight.
             </p>
