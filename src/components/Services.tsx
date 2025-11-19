@@ -40,7 +40,7 @@ export default function Talent({ onVisible }: TalentProps) {
           </h2>
           <div className="w-24 h-px bg-gradient-to-r from-black to-transparent mb-6 laptop:mb-0 desktop:mb-8"></div>
 
-          <div className="space-y-4 laptop:space-y-0 desktop:space-y-6 text-sm laptop:text-[7.5px] desktop:text-[15px] text-gray-600 leading-relaxed laptop:leading-[1.1] mb-8 laptop:mb-0 desktop:mb-10">
+          <div className="space-y-4 laptop:space-y-0 desktop:space-y-6 text-sm laptop:text-[7.5px] desktop:text-[15px] text-black leading-relaxed laptop:leading-[1.1] mb-8 laptop:mb-0 desktop:mb-10">
             <p>
               From concept to completion, we transform ideas into experiences that connect, inspire, and evolve through curated design.
             </p>
@@ -56,7 +56,7 @@ export default function Talent({ onVisible }: TalentProps) {
 
           <div className="mb-8 laptop:mb-0 desktop:mb-10">
             <h3 className="text-base laptop:text-[8px] desktop:text-lg font-semibold mb-4 laptop:mb-0 desktop:mb-6 text-black">Our services include:</h3>
-            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 laptop:gap-x-2 laptop:gap-y-0 text-sm laptop:text-[7.5px] laptop:leading-[1.15] desktop:text-[15px] text-gray-600">
+            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-2.5 laptop:gap-x-2 laptop:gap-y-0 text-sm laptop:text-[7.5px] laptop:leading-[1.15] desktop:text-[15px] text-black">
               <div className="flex items-start">
                 <span className="mr-2">•</span>
                 <span>Interior Architecture & Design</span>
@@ -102,7 +102,7 @@ export default function Talent({ onVisible }: TalentProps) {
 
 
 
-          <p className="text-sm laptop:text-[7.5px] desktop:text-[15px] text-gray-600 leading-relaxed laptop:leading-[1.1] laptop:mt-0">
+          <p className="text-sm laptop:text-[7.5px] desktop:text-[15px] text-black leading-relaxed laptop:leading-[1.1] laptop:mt-0">
             Every project is unique, yet each shares the same ambition, to create environments that tell a story.
           </p>
         </div>
