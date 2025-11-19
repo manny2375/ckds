@@ -146,7 +146,7 @@ export default function Story({ onVisible }: StoryProps) {
                 Our Approach
               </h3>
               <div className="w-24 h-px bg-gray-300 mb-8"></div>
-              <p className="text-[15px] leading-relaxed text-gray-900">
+              <p className="text-sm laptop:text-xs desktop:text-sm leading-relaxed text-gray-600">
                 We approach design as both art and intelligence, blending intuition with intention to create spaces that feel as good as they look. Our process is collaborative and transparent, built on trust, communication, and innovation. By uniting strategy with soul, we craft environments that enrich lifestyles, strengthen brands, and connect people.
               </p>
             </div>
