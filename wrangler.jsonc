@@ -1,5 +1,5 @@
 {
-  "name": "ckds-website",
+  "name": "ckds",
   "compatibility_date": "2025-11-19",
   "assets": {
     "directory": "./dist"
