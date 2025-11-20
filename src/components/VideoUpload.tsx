@@ -13,6 +13,10 @@ export default function VideoUpload() {
       setUploading(true);
       setError('');
 
+      if (!supabase) {
+        throw new Error('Supabase is not configured. Please set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY environment variables.');
+      }
+
       if (!event.target.files || event.target.files.length === 0) {
         throw new Error('You must select a video to upload.');
       }
