@@ -6,4 +6,4 @@ pages_build_output_dir = "dist"
 [[d1_databases]]
 binding = "DB"
 database_name = "ckds-database"
-database_id = "placeholder-database-id"
+database_id = "d9835972-bdfe-4fdc-b61a-3b0a606ecad6"
