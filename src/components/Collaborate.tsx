@@ -35,6 +35,10 @@ export default function Contact({ onVisible }: ContactProps) {
     setSubmitStatus('idle');
 
     try {
+      if (!supabase) {
+        throw new Error('Database not configured');
+      }
+
       const { error } = await supabase
         .from('newsletter_subscriptions')
         .insert([
