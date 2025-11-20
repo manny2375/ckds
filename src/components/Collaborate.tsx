@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, FormEvent } from 'react';
 import { Linkedin, Instagram } from 'lucide-react';
-import { supabase } from '../lib/supabase';
 
 interface ContactProps {
   onVisible: () => void;
@@ -35,19 +34,19 @@ export default function Contact({ onVisible }: ContactProps) {
     setSubmitStatus('idle');
 
     try {
-      if (!supabase) {
-        throw new Error('Database not configured');
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to subscribe');
       }
-
-      const { error } = await supabase
-        .from('newsletter_subscriptions')
-        .insert([
-          {
-            email: email,
-          },
-        ]);
-
-      if (error) throw error;
 
       setSubmitStatus('success');
       setEmail('');
